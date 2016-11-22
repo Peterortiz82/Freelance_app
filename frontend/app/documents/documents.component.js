@@ -8,7 +8,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
+var core_1 = require("@angular/core");
 var DocumentsComponent = (function () {
     function DocumentsComponent() {
         this.pageTitle = 'Document Dashboard';
@@ -18,33 +18,33 @@ var DocumentsComponent = (function () {
                 description: 'Some random description',
                 file_url: 'http://google.com',
                 updated_at: '11/11/16',
-                image_url: 'http://google.com',
+                image_url: 'https://websiteblob1.blob.core.windows.net/posts/121-code-it-7',
             },
             {
                 title: "My first Doc",
                 description: 'Some random description',
                 file_url: 'http://google.com',
                 updated_at: '11/11/16',
-                image_url: 'http://google.com',
+                image_url: 'https://websiteblob1.blob.core.windows.net/posts/121-code-it-7',
             },
             {
                 title: "My first Doc",
                 description: 'Some random description',
                 file_url: 'http://google.com',
                 updated_at: '11/11/16',
-                image_url: 'http://google.com',
+                image_url: 'https://websiteblob1.blob.core.windows.net/posts/121-code-it-7',
             },
         ];
     }
-    DocumentsComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: 'documents',
-            templateUrl: 'documents.component.html'
-        }), 
-        __metadata('design:paramtypes', [])
-    ], DocumentsComponent);
     return DocumentsComponent;
 }());
+DocumentsComponent = __decorate([
+    core_1.Component({
+        moduleId: module.id,
+        selector: 'documents',
+        templateUrl: 'documents.component.html'
+    }),
+    __metadata("design:paramtypes", [])
+], DocumentsComponent);
 exports.DocumentsComponent = DocumentsComponent;
 //# sourceMappingURL=documents.component.js.map
