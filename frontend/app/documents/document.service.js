@@ -10,13 +10,13 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require("@angular/core");
 var http_1 = require("@angular/http");
-var Observable_1 = require("rxjs/Observable");
+var Rx_1 = require("rxjs/Rx");
 var DocumentService = (function () {
     function DocumentService(http) {
         this.http = http;
-        this.documentsUrl = 'http://localhost:3001/freelance_documents.json';
+        this.documentsUrl = 'http://localhost:3000/freelance_documents.json';
     }
-    DocumentService.prototype.getDocument = function () {
+    DocumentService.prototype.getDocuments = function () {
         return this.http.get(this.documentsUrl)
             .map(function (response) { return response.json(); })
             .catch(this.handleError);
@@ -33,7 +33,7 @@ var DocumentService = (function () {
             errMsg = error.message ? error.message : error.toString();
         }
         console.error(errMsg);
-        return Observable_1.Observable.throw(errMsg);
+        return Rx_1.Observable.throw(errMsg);
     };
     return DocumentService;
 }());
