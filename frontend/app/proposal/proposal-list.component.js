@@ -8,19 +8,28 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
+var core_1 = require("@angular/core");
+var proposal_1 = require("./proposal");
 var ProposalListComponent = (function () {
     function ProposalListComponent() {
+        this.proposalOne = new proposal_1.Proposal(1, 'Abc Company one', 'http://google.com', 'Ruby on Rails', 150, 120, 15, 'peterortiz@gmail.com');
+        this.proposalTwo = new proposal_1.Proposal(2, 'Xyz Company two', 'http://google.com', 'Ruby on Rails', 150, 120, 15, 'peterortiz@gmail.com');
+        this.proposalThree = new proposal_1.Proposal(3, 'New Company', 'http://google.com', 'Ruby on Rails', 150, 120, 15, 'peterortiz@gmail.com');
+        this.proposals = [
+            this.proposalOne,
+            this.proposalTwo,
+            this.proposalThree
+        ];
     }
-    ProposalListComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: 'proposal-list',
-            templateUrl: 'proposal-list.component.html'
-        }), 
-        __metadata('design:paramtypes', [])
-    ], ProposalListComponent);
     return ProposalListComponent;
 }());
+ProposalListComponent = __decorate([
+    core_1.Component({
+        moduleId: module.id,
+        selector: 'proposal-list',
+        templateUrl: 'proposal-list.component.html'
+    }),
+    __metadata("design:paramtypes", [])
+], ProposalListComponent);
 exports.ProposalListComponent = ProposalListComponent;
 //# sourceMappingURL=proposal-list.component.js.map
