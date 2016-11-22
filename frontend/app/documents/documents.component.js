@@ -8,7 +8,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require("@angular/core");
+var core_1 = require('@angular/core');
 var DocumentsComponent = (function () {
     function DocumentsComponent() {
         this.pageTitle = 'Document Dashboard';
@@ -36,15 +36,16 @@ var DocumentsComponent = (function () {
             },
         ];
     }
+    DocumentsComponent = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'documents',
+            templateUrl: 'documents.component.html',
+            styleUrls: ['documents.component.css']
+        }), 
+        __metadata('design:paramtypes', [])
+    ], DocumentsComponent);
     return DocumentsComponent;
 }());
-DocumentsComponent = __decorate([
-    core_1.Component({
-        moduleId: module.id,
-        selector: 'documents',
-        templateUrl: 'documents.component.html'
-    }),
-    __metadata("design:paramtypes", [])
-], DocumentsComponent);
 exports.DocumentsComponent = DocumentsComponent;
 //# sourceMappingURL=documents.component.js.map
